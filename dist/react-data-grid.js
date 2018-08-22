@@ -6279,7 +6279,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        props.dependentValues = _this.getFormatterDependencies();
 	        CellContent = React.cloneElement(Formatter, props);
 	      } else if (isFunction(Formatter)) {
-	        CellContent = React.createElement(Formatter, { value: _this.props.value, dependentValues: _this.getFormatterDependencies() });
+	        CellContent = React.createElement(Formatter, _extends({ value: _this.props.value, dependentValues: _this.getFormatterDependencies() }, props));
 	      } else {
 	        CellContent = React.createElement(SimpleCellFormatter, { value: _this.props.value });
 	      }
